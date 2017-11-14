@@ -45,6 +45,20 @@ public class eventoResources {
         return evento; // retornandoo evento salvo
     }
 
+    /**
+     * metodo reponsavel por deletar um evento no banco de dados
+     * onde é utilizado os metodos Jpa para deletalo.
+     * ao final ele retorna o evento deletado.
+     * @param evento
+     * @return
+     */
+    //@ApiOperation(value = "Deleta um Evento")
+    @DeleteMapping() // assinatura do metodo , operação de remoção
+    public Evento deleteEvento(@RequestBody Evento evento){
+        er.delete(evento); // deletando no banco
+        return evento; // retornando o dado deletado
+    }
+
 
 
 
