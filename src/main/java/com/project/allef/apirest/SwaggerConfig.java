@@ -24,7 +24,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.project.rest.projectrest"))
+                .apis(RequestHandlerSelectors.basePackage("com.project.allef.apirest"))
                 .paths(regex("/times.*"))
                 .build()
                 .apiInfo(metaInfo());
@@ -33,12 +33,12 @@ public class SwaggerConfig {
     private ApiInfo metaInfo() {
 
         ApiInfo apiInfo = new ApiInfo(
-                "Times API REST",
-                "API REST de cadastro de Times de Futebol",
+                "Times API REST\n",
+                "API REST de cadastro de Times de Futebol\n ",
                 "1.0",
-                "Terms of Service",
+                "Terms of Service\n",
                 new Contact("Allef Sousa", "",
-                        "allefsousa_1@hotmail.com"),
+                        "allefsousa_1@hotmail.com\n\n"),
                 "Apache License Version 2.0",
                 "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>()
         );

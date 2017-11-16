@@ -2,12 +2,14 @@ package com.project.allef.apirest.Resources;
 
 import com.project.allef.apirest.Repository.TimeRepository;
 import com.project.allef.apirest.model.Time;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-
+@Api(value = "Api Rest Times Futebol")
 @RestController // assinatura para dizer que esta classe é a controller da Api
 @RequestMapping("/times") // url
 public class TimeResources {
