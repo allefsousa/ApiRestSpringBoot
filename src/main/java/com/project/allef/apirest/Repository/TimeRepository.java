@@ -1,6 +1,6 @@
 package com.project.allef.apirest.Repository;
 
-import com.project.allef.apirest.model.Evento;
+import com.project.allef.apirest.model.Time;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
@@ -9,8 +9,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * para ser acessada por outra classe
  */
 
-public interface eventoRepository extends JpaRepository<Evento,String> {
+public interface TimeRepository extends JpaRepository<Time,String> {
 
-    Evento findByCodigo(long codigo);
+    Time findByCodigo(long codigo);
 
 }
